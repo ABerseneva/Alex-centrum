@@ -1,0 +1,50 @@
+.list {
+  list-style: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+//   background-color: $background-color;
+//   color: $primary-text-color;
+
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.link {
+  text-decoration: none;
+}

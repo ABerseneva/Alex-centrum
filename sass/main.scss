@@ -1,1 +1,6 @@
-@import "./components/header"
+@import "./utils/_variables";
+@import "./utils/_mixins";
+@import "./base/_reset";
+@import "./base/_common";
+
+@import "./components/_header";
