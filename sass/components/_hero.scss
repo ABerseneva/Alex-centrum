@@ -1,0 +1,42 @@
+.hero-wrap {
+    @include mobile {
+    }
+    @include tablet {
+    }
+    @include desktop {
+        width: auto;
+        height: 500px;
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../../images/default/pressfoto_10380602-large.jpg);
+        background-size: cover;
+        padding: 200px 0;
+        margin-bottom: 60px;
+    }
+}
+.hero-title {
+    @include mobile {
+    }
+    @include tablet {
+    }
+    @include desktop {
+        color: whitesmoke;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 44px;
+        margin-bottom: 30px;
+    }
+}
+.hero-btn {
+    @include mobile {
+    }
+    @include tablet {
+    }
+    @include desktop {
+        padding: 10px 32px;
+        margin: 0 auto;
+        display: block;
+    }
+}

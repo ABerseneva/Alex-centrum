@@ -1,0 +1,186 @@
+.footer {
+  background-color: #292929;
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+  }
+}
+.footer-wrap {
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.footer-logo-wrap {
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+  }
+}
+.footer-logo {
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+  }
+}
+.footer-logo-img {
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+    width: 300px;
+  }
+}
+.footer-adress-wrap {
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+    width: 450px;
+  }
+}
+.footer-adress {
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+  }
+}
+.footer-adress-text {
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+    font-style: normal;
+    color: #ffffff;
+  }
+}
+.footer-contacts {
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+  }
+}
+.footer-contacts-list {
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.footer-contacts-item {
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+  }
+}
+.footer-contacts-link {
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #ffffff;
+    &:hover,
+    &:focus {
+      color: #daa600;
+      transition-duration: 250ms;
+      transition-timing-function: $timing-function;
+    }
+  }
+}
+.footer-contacts-icon {
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+  fill: #ffffff;
+  .footer-contacts-link:hover,
+  .footer-contacts-link:hover & {
+    fill: #daa600;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+  }
+  .footer-contacts-link:focus,
+  .footer-contacts-link:focus & {
+    fill: #daa600;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+  }
+  }
+}
+.btn-beginning {
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+    margin: 0 40px;
+  }
+}
+.btn-link {
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+  }
+}
+.btn-beginning-icon {
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+    fill: #ffffff;
+    .btn-link:hover,
+    .btn-link:hover & {
+      fill: #daa600;
+      transition-duration: 250ms;
+      transition-timing-function: $timing-function;
+      transform: translateY(-10px);
+    }
+    .btn-link:focus,
+    .btn-link:focus & {
+      fill: #daa600;
+      transition-duration: 250ms;
+      transition-timing-function: $timing-function;
+      transform: translateY(-10px);
+    }
+  }
+}

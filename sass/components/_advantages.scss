@@ -1,0 +1,33 @@
+.advantages {
+}
+.advantages-list {
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+}
+.advantages-item {
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    width: 200px;
+  }
+}
+.advantages-icon {
+}
+.advantages-title {
+}
+.advantages-text {
+}

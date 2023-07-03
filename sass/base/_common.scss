@@ -1,16 +1,18 @@
-.list {
-  list-style: none;
+a {
+  text-decoration: none;
 }
 
 ul {
     list-style: none;
 }
 
+
 body {
 //   background-color: $background-color;
 //   color: $primary-text-color;
+margin: 0;
 
-  font-family: Roboto, sans-serif;
+font-family: 'Raleway', sans-serif;
 }
 
 .container {
@@ -39,12 +41,9 @@ body {
     padding-bottom: 60px;
   }
 
-  @include desktop {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+  // @include desktop {
+  //   padding-top: 94px;
+  //   padding-bottom: 94px;
+  // }
 }
 
-.link {
-  text-decoration: none;
-}
