@@ -1,42 +1,40 @@
 .contact-form {
-  @include mobile {
-  }
   @include tablet {
   }
   @include desktop {
   }
 }
 .form-wrap {
-  @include mobile {
-  }
+  padding: 15px;
   @include tablet {
+    padding: 30px;
   }
   @include desktop {
     padding: 50px;
   }
 }
 .form-title {
-  @include mobile {
-  }
+  margin-bottom: 20px;
+  font-size: 28px;
+  line-height: 1.16;
+  font-weight: 700;
   @include tablet {
+    font-size: 32px;
   }
   @include desktop {
-    margin-bottom: 20px;
     font-size: 36px;
-    line-height: 1.16;
-    font-weight: 700;
   }
 }
 .form-text {
-  @include mobile {
-  }
+  font-size: 18px;
   @include tablet {
-  }
-  @include desktop {
     margin-bottom: 20px;
     font-weight: 400;
-    font-size: 21px;
+    font-size: 18px;
     line-height: 1.16;
+  }
+  @include desktop {
+    font-size: 21px;
   }
 }
 .form {
@@ -48,104 +46,155 @@
   }
 }
 .form-group {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 170px;
+    width: 50%;
   @include mobile {
   }
   @include tablet {
+    // display: flex;
+    // flex-direction: column;
+    // flex-wrap: wrap;
+    // height: 170px;
+    // width: 50%;
   }
   @include desktop {
-    display: flex;
-    flex-wrap: nowrap;
+   
   }
 }
 .form-inputs {
+  width: 100%;
   @include mobile {
   }
   @include tablet {
   }
   @include desktop {
-    width: 100%;
+    // width: 100%;
   }
 }
 .form-label {
-  @include mobile {
+  &:hover {
+    pointer-events: none;
   }
   @include tablet {
   }
   @include desktop {
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    // padding: 15px 0px;
+
+    // padding: 15px;
+    // display: flex;
+    // flex-direction: column;
+    // gap: 10px;
   }
 }
 .form-input {
+  display: block;
+  width: 90%;
+  padding: 10px 12px;
+  margin: 10px 0px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #bdbdbd;
+  border-radius: 4px;
+  &:hover {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:focus,
+  &:focus-visible {
+    border: 1px solid #f3b900;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 4px rgba(205, 159, 6, 0.5);
+    outline: none;
+  }
+  &:placeholder {
+    color: #56595a;
+    opacity: 0.4;
+  }
   @include mobile {
   }
   @include tablet {
   }
-  @include desktop {
-    display: block;
-    padding: 10px 12px;
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
-    border: 1px solid #bdbdbd;
-    border-radius: 4px;
-    &:hover {
-      box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &:focus,
-    &:focus-visible {
-      border: 1px solid #f3b900;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0 0 4px rgba(205, 159, 6, 0.5);
-      outline: none;
-    }
-    &:placeholder {
-      color: #56595a;
-      opacity: 0.4;
-    }
-    // &:valid {
-    //   border-color: #198754;
-    //   padding-right: 2.25rem;
-    //   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
-    //   background-repeat: no-repeat;
-    //   background-position: right 0.5625rem center;
-    //   background-size: 1.125rem 1.125rem;
-    // }
-    // &:invalid:required {
-    //   border-color: #dc3545;
-    //   padding-right: 2.25rem;
-    //   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
-    //   background-repeat: no-repeat;
-    //   background-position: right 0.5625rem center;
-    //   background-size: 1.125rem 1.125rem;
-    // }
-  }
+  // @include desktop {
+  //   display: block;
+  //   width: 90%;
+  //   padding: 10px 12px;
+  //   margin: 10px 0px;
+  //   font-family: inherit;
+  //   font-size: 16px;
+  //   font-weight: 300;
+  //   line-height: 1.5;
+  //   color: #212529;
+  //   background-color: #fff;
+  //   border: 1px solid #bdbdbd;
+  //   border-radius: 4px;
+  //   &:hover {
+  //     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  //     transition-duration: 250ms;
+  //     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  //   }
+  //   &:focus,
+  //   &:focus-visible {
+  //     border: 1px solid #f3b900;
+  //     transition-duration: 250ms;
+  //     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  //     box-shadow: 0 0 4px rgba(205, 159, 6, 0.5);
+  //     outline: none;
+  //   }
+  //   &:placeholder {
+  //     color: #56595a;
+  //     opacity: 0.4;
+  //   }
+  //   // &:valid {
+  //   //   border-color: #198754;
+  //   //   padding-right: 2.25rem;
+  //   //   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+  //   //   background-repeat: no-repeat;
+  //   //   background-position: right 0.5625rem center;
+  //   //   background-size: 1.125rem 1.125rem;
+  //   // }
+  //   // &:invalid:required {
+  //   //   border-color: #dc3545;
+  //   //   padding-right: 2.25rem;
+  //   //   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+  //   //   background-repeat: no-repeat;
+  //   //   background-position: right 0.5625rem center;
+  //   //   background-size: 1.125rem 1.125rem;
+  //   // }
+  // }
 }
 .form-group-agreement {
   @include mobile {
   }
   @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   @include desktop {
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
   }
 }
-.form-btn {
-  @include mobile {
-  }
-  @include tablet {
-  }
-  @include desktop {
-    background-color: #f3b900;
+.wrap-checkbox {
+display: flex;
+align-items: flex-start;
+gap: 5px;
+}
+
+.form-btn {  
+  background-color: #f3b900;
     border: none;
-    color: ffffff;
+    color: #ffffff;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -156,5 +205,11 @@
       box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
         0 17px 50px 0 rgba(0, 0, 0, 0.19);
     }
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+  
   }
 }

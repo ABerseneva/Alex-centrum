@@ -8,8 +8,12 @@
   }
 }
 .footer-wrap {
-  @include mobile {
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 30px;
+
   @include tablet {
   }
   @include desktop {
@@ -17,6 +21,23 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    padding-bottom: 0;
+  }
+}
+.footer-top-wrap {
+  @include mobile {
+  }
+  @include tablet {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  @include desktop {
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
 }
 .footer-logo-wrap {
@@ -36,9 +57,10 @@
   }
 }
 .footer-logo-img {
-  @include mobile {
-  }
+  width: 300px;
+
   @include tablet {
+    width: 250px;
   }
   @include desktop {
     width: 300px;
@@ -62,13 +84,13 @@
   }
 }
 .footer-adress-text {
+  font-style: normal;
+  color: #ffffff;
   @include mobile {
   }
   @include tablet {
   }
   @include desktop {
-    font-style: normal;
-    color: #ffffff;
   }
 }
 .footer-contacts {
@@ -77,6 +99,23 @@
   @include tablet {
   }
   @include desktop {
+  }
+}
+.footer-bottom-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+  
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  @include desktop {
+    display: flex;
+    align-items: center;
   }
 }
 .footer-contacts-list {
@@ -91,42 +130,52 @@
   }
 }
 .footer-contacts-item {
-  @include mobile {
-  }
-  @include tablet {
+  &:nth-last-child(even){
+    margin-bottom: 10px;
   }
   @include desktop {
+    margin-bottom: 0;
   }
 }
 .footer-contacts-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #ffffff;
+  &:hover,
+  &:focus {
+    color: #daa600;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+  }
   @include mobile {
   }
   @include tablet {
   }
   @include desktop {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: #ffffff;
-    &:hover,
-    &:focus {
-      color: #daa600;
-      transition-duration: 250ms;
-      transition-timing-function: $timing-function;
-    }
+    // display: flex;
+    // align-items: center;
+    // gap: 10px;
+    // font-weight: 500;
+    // font-size: 14px;
+    // line-height: 1.14;
+    // letter-spacing: 0.02em;
+    // text-decoration: none;
+    // color: #ffffff;
+    // &:hover,
+    // &:focus {
+    //   color: #daa600;
+    //   transition-duration: 250ms;
+    //   transition-timing-function: $timing-function;
+    // }
   }
 }
 .footer-contacts-icon {
-  @include mobile {
-  }
-  @include tablet {
-  }
-  @include desktop {
   transition-duration: 250ms;
   transition-timing-function: $timing-function;
   fill: #ffffff;
@@ -142,6 +191,26 @@
     transition-duration: 250ms;
     transition-timing-function: $timing-function;
   }
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+    // transition-duration: 250ms;
+    // transition-timing-function: $timing-function;
+    // fill: #ffffff;
+    // .footer-contacts-link:hover,
+    // .footer-contacts-link:hover & {
+    //   fill: #daa600;
+    //   transition-duration: 250ms;
+    //   transition-timing-function: $timing-function;
+    // }
+    // .footer-contacts-link:focus,
+    // .footer-contacts-link:focus & {
+    //   fill: #daa600;
+    //   transition-duration: 250ms;
+    //   transition-timing-function: $timing-function;
+    // }
   }
 }
 .btn-beginning {
@@ -162,25 +231,41 @@
   }
 }
 .btn-beginning-icon {
+  fill: #ffffff;
+  .btn-link:hover,
+  .btn-link:hover & {
+    fill: #daa600;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+    transform: translateY(-10px);
+  }
+  .btn-link:focus,
+  .btn-link:focus & {
+    fill: #daa600;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+    transform: translateY(-10px);
+  }
+
   @include mobile {
   }
   @include tablet {
   }
   @include desktop {
-    fill: #ffffff;
-    .btn-link:hover,
-    .btn-link:hover & {
-      fill: #daa600;
-      transition-duration: 250ms;
-      transition-timing-function: $timing-function;
-      transform: translateY(-10px);
-    }
-    .btn-link:focus,
-    .btn-link:focus & {
-      fill: #daa600;
-      transition-duration: 250ms;
-      transition-timing-function: $timing-function;
-      transform: translateY(-10px);
-    }
+    // fill: #ffffff;
+    // .btn-link:hover,
+    // .btn-link:hover & {
+    //   fill: #daa600;
+    //   transition-duration: 250ms;
+    //   transition-timing-function: $timing-function;
+    //   transform: translateY(-10px);
+    // }
+    // .btn-link:focus,
+    // .btn-link:focus & {
+    //   fill: #daa600;
+    //   transition-duration: 250ms;
+    //   transition-timing-function: $timing-function;
+    //   transform: translateY(-10px);
+    // }
   }
 }

@@ -5,72 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
+    <linkf
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../sass/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../sass/main.css" />
+    <!-- <script type="module" src="../index.js"></script> -->
+    <script type="module" src="../../js/lang-menu.js"></script>
   </head>
-  <body>
-    <!-- HEADER -->
-    <header class="section header">
-      <div class="container header-container">
-        <div class="contacts-wrap">
-          <ul class="contacts-list">
-            <li class="contacts-item">
-              <a class="contacts-link" href="">
-                <svg class="contacts-icon" width="40" height="40">
-                  <use href="../images/symbol-defs.svg#icon-verify"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="contacts-item">
-              <a class="contacts-link" href="">
-                <svg class="contacts-icon" width="40" height="40">
-                  <use href="../images/symbol-defs.svg#icon-verify"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="contacts-item">
-              <a class="contacts-link" href="">
-                <svg class="contacts-icon" width="40" height="40">
-                  <use href="../images/symbol-defs.svg#icon-verify"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+  <body class="page" id="page">
+    <div>
+      <!-- HEADER -->
+      <header class="header">
+        <div class="container header-container">
+          <nav class="nav">
+            <a class="nav-logo" href="../eng/index.html">
+              <img
+                class="nav-logo-img"
+                src="../../images/logo/logo_orange.png"
+                alt="logo"
+              />
+            </a>
+            <div class="nav-wrap">
+              <ul class="nav-list list">
+                <li class="nav-item">
+                  <a class="nav-link" href="../eng/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../eng/about.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link current" href="../eng/job-offers.html"
+                    >Job offers</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../eng/for-customers.html"
+                    >For customers</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../eng/contacts.html">Contacts</a>
+                </li>
+              </ul>
+              <div class="header-lang">
+                <div class="navbar-lang">
+                  <div class="dropdown-lang">
+                    <button class="dropbtn">Eng <svg class="dropdown-icon" width="20px" height="20px">
+                      <use
+                        href="../../images/symbol-defs.svg#icon-united-kingdom-flag"
+                      ></use></svg
+                  ></button>
+                    <div class="dropdown-content">
+                      <a class="dropdown-link" href="../pol/index.html">Pol <svg class="dropdown-icon" width="20px" height="20px">
+                        <use
+                          href="../../images/symbol-defs.svg#icon-poland-flag"
+                        ></use></svg
+                    ></a>
+                      <a class="dropdown-link" href="../ukr/index.html">Ukr <svg class="dropdown-icon" width="20px" height="20px">
+                        <use
+                          href="../../images/symbol-defs.svg#icon-ukraine-flag"
+                        ></use></svg
+                    ></a>
+                      <a class="dropdown-link" href="../rus/index.html">Rus <svg class="dropdown-icon" width="20px" height="20px">
+                        <use
+                          href="../../images/symbol-defs.svg#icon-russia-flag"
+                        ></use></svg
+                    ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
         </div>
-        <nav class="nav">
-          <a class="nav-logo" href="./index.html">
-            <img
-              class="nav-logo-img"
-              src="../images/default/default-logo.png"
-              alt="logo"
-            />
-          </a>
-          <ul class="nav-list list">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link current" href="./job-offers.html">Job offers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./for-customers.html">For customers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contacts.html">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+      </header>
     <h1>Job offers</h1>
     <footer class="footer">
       <div class="footer-wrap">

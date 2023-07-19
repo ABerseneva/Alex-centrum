@@ -1,19 +1,31 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #ffffff;
   @include mobile {
   }
   @include tablet {
   }
   @include desktop {
+    // position: fixed;
+    // top: 0;
   }
 }
 
 .header-container {
+  padding: 0;
+  margin: 0 auto;
+  height: 100px;
+  display: flex;
   @include tablet {
-    display: none;
+    // display: none;
   }
   @include desktop {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
   }
 }
 .nav {
@@ -38,6 +50,7 @@
 }
 .nav-wrap {
   @include mobile {
+    display: none;
   }
   @include tablet {
   }
@@ -207,6 +220,100 @@
     text-decoration: none;
   }
 }
+
+
+// ===================
+
+.mobile-menu {
+    position: fixed;
+  top: 0;
+  width: 100vw; 
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 1;
+  padding: 21px 21px 48px 40px;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: scroll;
+  @include desktop {
+      display: none;
+    }
+}
+.is-hidden {
+}
+.mobile-menu-top {
+  
+}
+.mob-nav-logo-img {
+  width: 200px;
+}
+.header-close-btn {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    // margin-left: auto;
+    margin-bottom: 8px;
+    fill: black;
+    display: block;
+    @include desktop {
+        display: none;
+      }
+  }
+  .header-close-btn:hover,
+  .header-close-btn:focus {
+    fill: orange;
+    @include desktop {
+        display: none;
+      }
+  }
+  
+.close-btn-icon {
+}
+.mob-nav-list {
+}
+.list {
+}
+.mob-nav-item {
+}
+.mob-nav-link {
+}
+.link {
+}
+.current {
+}
+.mobile-menu-bottom {
+}
+.mob-lang-list {
+}
+.mob-lang-item {
+}
+.mob-lang-link {
+}
+.mob-lang-icon {
+}
+// .mobile-menu {
+//   position: fixed;
+//   top: 0;
+//   width: 100vw; 
+//   height: 100vh;
+//   background-color: #ffffff;
+//   z-index: 1;
+//   padding: 21px 21px 48px 40px;
+
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   overflow: scroll;
+//   @include tablet {
+//       display: none;
+//     }
+// }
 // .section {
 // }
 // .header {
@@ -627,14 +734,14 @@
 
 // ===========================
 
-.nav-item {
-  // letter-spacing: 0;
-}
+// .nav-item {
+//   // letter-spacing: 0;
+// }
 
-.nav-item:hover,
-.nav-item:active {
-  // letter-spacing: 5px;
-}
+// .nav-item:hover,
+// .nav-item:active {
+//   // letter-spacing: 5px;
+// }
 
 // .nav-item:after,
 // .nav-item:before {
